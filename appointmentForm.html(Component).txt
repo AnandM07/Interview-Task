@@ -1,0 +1,21 @@
+<!-- appointmentForm.html -->
+<template>
+    <lightning-card title="Appointment Form">
+        <div>
+            <lightning-input-field field-name="ContactId" required></lightning-input-field>
+            <lightning-input type="text" label="Subject" required></lightning-input>
+            <lightning-input type="datetime-local" label="Appointment Date and Time" required></lightning-input>
+            <lightning-button label="Check Availability" onclick={handleCheckAvailability} variant="brand"></lightning-button>
+            <template if:true={isAvailable}>
+                <div>Appointment available.</div>
+            </template>
+            <template if:false={isAvailable}>
+                <div>Appointment not available.</div>
+            </template>
+            <lightning-textarea label="Description" required></lightning-textarea>  
+            <p align="center">
+            <lightning-button label="Book Appointment" onclick={handleBookAppointment} variant="brand"></lightning-button>        
+        </p>  
+        </div>
+    </lightning-card>
+</template>
