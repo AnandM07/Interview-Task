@@ -1,1 +1,3 @@
 # Interview-Task
+
+The project involves creating a Salesforce Lightning Web Component (LWC) called "AppointmentForm" that facilitates booking appointments. Users can input details such as contact information, appointment subject, date, time, and description. The component checks for appointment availability based on predefined slots and allows users to book appointments if available. Upon submission, the appointment details are saved to a custom Salesforce object named "Appointment Details." The implementation utilizes Salesforce Apex controllers for server-side logic, Lightning Data Service for data retrieval and persistence, and Lightning Design System (SLDS) for styling, adhering to Salesforce best practices for code organization, error handling, and security.
